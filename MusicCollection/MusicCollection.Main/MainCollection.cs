@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MusicCollection.Main
 {
-    class MainCollection
-    {
-    }
+	class MainCollection
+	{
+	}
 }

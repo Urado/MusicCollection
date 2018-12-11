@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MusicCollection
+namespace MusicCollection.Main.Tag
 {
-	class Program
+	public class BasicTag
 	{
-		static void Main(string[] args)
-		{
-		}
+		public string Name { get; set; }
+
+		public Guid guid { get; set; }
 	}
 }

@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MusicCollection
+namespace MusicCollection.Main.Model
 {
-	class Program
+	interface IMusicCollectionModelBuilder
 	{
-		static void Main(string[] args)
-		{
-		}
 	}
 }
