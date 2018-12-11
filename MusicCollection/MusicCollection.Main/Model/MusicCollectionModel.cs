@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MusicCollection.Main.Model
 {
-	class MusicCollectionModel
+	public class MusicCollectionModel
 	{
 		public TagManager MainTagManager { get; set; }
 		public TrackManager MainTrackManager { get; set; }

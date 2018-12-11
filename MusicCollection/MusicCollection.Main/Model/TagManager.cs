@@ -5,6 +5,6 @@ namespace MusicCollection.Main.Model
 {
 	public class TagManager
 	{
-		public IReadOnlyList<BasicTag> BasicTags { get; set; }
+		public IReadOnlyList<BasicTag> Tags { get; set; }
 	}
 }

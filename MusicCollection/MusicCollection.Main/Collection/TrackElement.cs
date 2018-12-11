@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MusicCollection.Main.Collection
 {
-	class TrackElement
+	public class TrackElement
 	{
 		public IReadOnlyList<BasicTag> Tags { get; set; }
 		public string Name { get; set; }

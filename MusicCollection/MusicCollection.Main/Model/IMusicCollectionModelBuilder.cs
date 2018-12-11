@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MusicCollection.Main.Model
 {
-	interface IMusicCollectionModelBuilder
+	public interface IMusicCollectionModelBuilder
 	{
+		MusicCollectionModel BuildMusicCollectionModel();
 	}
 }

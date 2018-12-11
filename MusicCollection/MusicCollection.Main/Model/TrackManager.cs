@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace MusicCollection.Main.Model
 {
-	class TrackManager
+	public class TrackManager
 	{
-		public IReadOnlyList<TrackElement> TrackElements { get; set; }
+		public IReadOnlyList<TrackElement> Tracks { get; set; }
 	}
 }
