@@ -8,9 +8,9 @@ namespace MusicCollection.Helpers
 {
     public static class MoreEnumerable
     {
-        public static IReadOnlyList<T> ToReadOnlyList<T>(this IEnumerable<T> enumerable)
+        public static IReadOnlyList<T> ToReadOnlyList<T>(this IEnumerable<T> value)
         {
-            return enumerable.ToList();
+            return value.ToList();
         }
     }
 }

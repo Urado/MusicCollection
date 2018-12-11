@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCollection.Main", "Mus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCollection.Helpers", "MusicCollection.Helpers\MusicCollection.Helpers.csproj", "{02C5944E-0316-41E9-9077-9A0D7CCBFA81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCollection.FileSystem.Interface", "MusicCollection.FileSystem.Interface\MusicCollection.FileSystem.Interface.csproj", "{A6AC7ABA-3FA9-4295-81E8-166311A5ADCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCollection.FileSystem.Windows", "MusicCollection.FileSystem.Windows\MusicCollection.FileSystem.Windows.csproj", "{AD8A2818-214C-4975-8908-49A6AE4B1655}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{02C5944E-0316-41E9-9077-9A0D7CCBFA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02C5944E-0316-41E9-9077-9A0D7CCBFA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02C5944E-0316-41E9-9077-9A0D7CCBFA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6AC7ABA-3FA9-4295-81E8-166311A5ADCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AC7ABA-3FA9-4295-81E8-166311A5ADCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AC7ABA-3FA9-4295-81E8-166311A5ADCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AC7ABA-3FA9-4295-81E8-166311A5ADCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8A2818-214C-4975-8908-49A6AE4B1655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8A2818-214C-4975-8908-49A6AE4B1655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8A2818-214C-4975-8908-49A6AE4B1655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8A2818-214C-4975-8908-49A6AE4B1655}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
