@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Linq;
 using MoreLinq;
+using System.Collections.Generic;
 
 namespace MusicCollection.Windows.FileSystem
 {
@@ -14,6 +15,27 @@ namespace MusicCollection.Windows.FileSystem
 		{
 			_directoryPath = directoryPath;
 			mainDirectory = new DirectoryInfo(directoryPath);
+		}
+
+		public IReadOnlyList<FileForCollectionModel> FilesForCollectionInFolder(string directoryInfo)
+		{
+			throw new NotImplementedException();
+		}
+
+		private IReadOnlyList<FileForCollectionModel> FilesForCollectionInFolderRec(DirectoryInfo directoryInfo,List<string> protoTegs)
+		{
+			var ret = new List<FileForCollectionModel>{ };
+
+			protoTegs.Add(directoryInfo.Name);
+
+			directoryInfo.GetDirectories().ForEach(d => ret.AddRange(FilesForCollectionInFolderRec(d, protoTegs)));
+
+			ret.AddRange(directoryInfo.GetFiles()
+				.Where(f => FileSystemHelper.FileFormats.Where(format => f.Name.LastIndexOf(format) == f.Name.Length - format.Length).Any())
+				.Select(f => new FileForCollectionModel { FileInfo = f, ProtoTegs = new List<string>(protoTegs) }));
+
+			protoTegs.RemoveAt(protoTegs.Count - 1);
+			return ret;
 		}
 
 		public void ShowInerDirtectiry()

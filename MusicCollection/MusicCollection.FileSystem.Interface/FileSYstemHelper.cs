@@ -15,6 +15,7 @@ namespace MusicCollection.FileSystem.Interface
 
 			".mp3",
 			".flac",
+			".waw",
 		};
 	}
 }

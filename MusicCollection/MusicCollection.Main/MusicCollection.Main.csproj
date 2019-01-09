@@ -49,8 +49,13 @@
     <Compile Include="Model\TrackManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tag\BasicTag.cs" />
+    <Compile Include="Tag\TagBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MusicCollection.FileSystem.Interface\MusicCollection.FileSystem.Interface.csproj">
+      <Project>{A6AC7ABA-3FA9-4295-81E8-166311A5ADCE}</Project>
+      <Name>MusicCollection.FileSystem.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MusicCollection.Helpers\MusicCollection.Helpers.csproj">
       <Project>{02C5944E-0316-41E9-9077-9A0D7CCBFA81}</Project>
       <Name>MusicCollection.Helpers</Name>

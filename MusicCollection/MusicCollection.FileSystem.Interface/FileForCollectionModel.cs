@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MusicCollection.FileSystem.Interface
 {
-	public interface IFIleSystem
+	public class FileForCollectionModel
 	{
-		IReadOnlyList<FileForCollectionModel> FilesForCollectionInFolder(string directoryInfo);
+		public IReadOnlyList<string> ProtoTegs{ get; set; }
+		public FileInfo FileInfo { get; set; }
 	}
 }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileForCollectionModel.cs" />
     <Compile Include="FileSystemHelper.cs" />
     <Compile Include="IFIleSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

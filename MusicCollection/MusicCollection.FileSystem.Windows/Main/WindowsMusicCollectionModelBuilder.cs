@@ -1,4 +1,5 @@
-﻿using MusicCollection.Main.Collection;
+﻿using MusicCollection.FileSystem.Interface;
+using MusicCollection.Main.Collection;
 using MusicCollection.Main.Model;
 using MusicCollection.Main.Tag;
 using System;
@@ -11,6 +12,11 @@ namespace MusicCollection.Windows.FileSystem.Main
 {
 	public class WindowsMusicCollectionModelBuilder : IMusicCollectionModelBuilder
 	{
+		public MusicCollectionModel BuildMusicCollectionFromDirectory(IFIleSystem fileSystem, string folder)
+		{
+			
+		}
+
 		public MusicCollectionModel BuildMusicCollectionModel()
 		{
 			var tagManager = new TagManager { Tags = new List<BasicTag> { } };
